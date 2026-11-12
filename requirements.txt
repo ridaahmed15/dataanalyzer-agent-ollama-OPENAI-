@@ -1,0 +1,12 @@
+# Minimum versions (no exact pins) so the project installs on current Python
+# releases — the old pins (pandas 2.2.2, numpy 1.26.4, openai 1.30.5, streamlit
+# 1.35) have no wheels for Python 3.13/3.14 and openai<1.55 crashes with new httpx.
+streamlit>=1.50
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1
+xlrd>=2.0.1
+plotly>=5.22
+statsmodels>=0.14      # needed for the scatter-plot trendline (px.scatter trendline="ols")
+openai>=1.55
+python-dotenv>=1.0
